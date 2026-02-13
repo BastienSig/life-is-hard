@@ -2,18 +2,18 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const questionImage = ".assets/images/question.jpg";
+  const questionImage = "./assets/images/question.jpg";
 
   const yesImages = [
-    ".assets/images/oui.png",
-    ".assets/images/oui1.png",
+    "./assets/images/oui.png",
+    "./assets/images/oui1.png",
   ];
 
   const noImages = [
-    ".assets/images/non.png",
-    ".assets/images/non1.png",
-    ".assets/images/non2.png",
-    ".assets/images/non3.png",
+    "./assets/images/non.png",
+    "./assets/images/non1.png",
+    "./assets/images/non2.png",
+    "./assets/images/non3.png",
   ];
 
   const [mode, setMode] = useState("question");
