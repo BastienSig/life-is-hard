@@ -1,19 +1,26 @@
 import { useState } from "react";
 import "./App.css";
+import questionImage from "./assets/images/question.jpg";
+import ouiImage from "./assets/images/oui.png";
+import oui1Image from "./assets/images/oui1.png";
+import nonImage from "./assets/images/non.png";
+import non1Image from "./assets/images/non1.png";
+import non2Image from "./assets/images/non2.png";
+import non3Image from "./assets/images/non3.png";
 
 function App() {
-  const questionImage = "./assets/images/question.jpg";
+  const question = questionImage;
 
   const yesImages = [
-    "./assets/images/oui.png",
-    "./assets/images/oui1.png",
+    oui1Image,
+    ouiImage,
   ];
 
   const noImages = [
-    "./assets/images/non.png",
-    "./assets/images/non1.png",
-    "./assets/images/non2.png",
-    "./assets/images/non3.png",
+    nonImage,
+    non1Image,
+    non2Image,
+    non3Image,
   ];
 
   const [mode, setMode] = useState("question");
@@ -43,7 +50,7 @@ const handleNo = () => {
 
 
   let currentImage;
-  if (mode === "question") currentImage = questionImage;
+  if (mode === "question") currentImage = question;
   if (mode === "yes") currentImage = yesImages[imageIndex];
   if (mode === "no") currentImage = noImages[imageIndex];
 
