@@ -5,15 +5,15 @@ function App() {
   const questionImage = "/images/question.jpg";
 
   const yesImages = [
-    "/images/oui.png",
-    "/images/oui1.png",
+    "./images/oui.png",
+    "./images/oui1.png",
   ];
 
   const noImages = [
-    "/images/non.png",
-    "/images/non1.png",
-    "/images/non2.png",
-    "/images/non3.png",
+    "./images/non.png",
+    "./images/non1.png",
+    "./images/non2.png",
+    "./images/non3.png",
   ];
 
   const [mode, setMode] = useState("question");
